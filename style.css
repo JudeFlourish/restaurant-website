@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-logo1: #C0AE26;
+    --bg-logo2: #483325;
+    --transition: all 600ms ease;
+    --text-color: white;
+}
+
+body{
+    background-image: url(./images/restaurant\ backgroud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+
+.container{
+    width: 76%;
+    margin: 0 auto;
+}
+/* ------------------------------nav----------------------------------- */
+.nav_container{
+    margin-top: 1rem;
+    color: var(--text-color);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo_contain{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo_img img{
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nav_menu{
+    text-align: right;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: right;
+    transition: var(--transition);
+}
+
+.nav_menu a{
+    color: var(--text-color);
+}
+
+.nav_menu a:hover{
+    opacity: 0.5;
+}
+
+nav button{
+    display: none;
+}
+
+/* change navbar style on scroll using javascript */
+.window-scroll{
+    background-color: #4F7C82;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+/* ------------------------------end of nav----------------------------------- */
+
+
+
+.home_page{
+    margin-top: 6rem;
+    align-items: center;
+    padding-right: 30rem
+}
+
+.home_page h1{
+    color: var(--text-color);
+}
+
+.home_page p{
+    margin: 2rem 0 2rem;
+    line-height: 1.8rem;
+    color: var(--text-color);
+}
+
+.home_page button{
+    background-color: ol;
+    /* background: linear-gradient(#274427, #92B792); */
+    background: linear-gradient(var(--bg-logo1), var(--bg-logo2));
+    padding: 1rem 2rem;
+    border: 1.5px solid var(--bg-logo2);
+    box-shadow: 1px 1px 1px 0 black rgba(1, 0, 0, 0.3);
+    text-decoration: none;
+    transition: var(--transition);  
+}
+
+.home_page button:hover{
+    background: transparent;
+}
+.home_page button a{
+    color: var(--text-color);
+}
+
+
+/* media queries for tablet */
+@media screen and (max-width: 1024px) {
+    .home_page{
+        margin-top: 6rem;
+        align-items: center;
+        padding-right: 25rem;
+        line-height: 1.5rem;
+    }
+    
+    .home_page h1{
+        line-height: 2.5rem;
+    }
+    
+    .container{
+        width: 85%;
+    }
+
+    /* nav */
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: white;
+        cursor: pointer;
+    }
+    
+      nav button.close_menu_btn{
+        display: none;
+    
+    }
+
+      .nav_menu{
+        position: fixed;
+        top: 4rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+
+    .nav_menu li{
+        width: 100%;
+        height: 5.8rem;
+        opacity: 0;
+    }
+
+    .nav_menu li a{
+        background: var(--bg-logo2);
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+      }
+}
+
+/* media queries for phones */
+@media screen and (max-width: 600px) {
+    .home_page{
+        margin-top: 4rem;
+        align-items: center;
+        padding-right: 9rem;
+    }
+
+    .home_page p{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .home_page h1{
+        line-height: 2.5rem;
+    }
+    
+    .container{
+        width: 90%;
+    }
+
+    body{
+    background-size: cover;
+    width: auto;
+    height: 100%;
+    /* background-position: center; */
+    /* position: relative; */
+    margin: 0 auto;
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="about us.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+</head>
+<body>
+    <!-- ----------- nav ---------- -->
+    <nav>
+        <div class="container nav_container">
+            <div class="logo_contain">
+               <div class="logo_img">
+                  <img src="./images/logo2.jpg" alt="">
+               </div>
+               <h3>Sizzle Shack Restaurant</h3>
+            </div>
+                <ul class="nav_menu">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="menu.html" class="menu_bg">Menu</a></li>
+                   <li><a href="about us.html">About us</a></li>
+                </ul>
+        </div>
+    </nav>
+     <!-- ----------- end of nav ---------- -->
+
+
+
+     <!-- slideshow section -->
+    <section class="slides swiper mySwiper">
+        <div class="swiper-wrapper">
+            <article class="slide1 swiper-slide">
+                <div class="content">
+                   <h1>Healthy Meals</h1>
+                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, tempore.</p>
+                </div>
+            </article>
+
+            <article class="slide2 swiper-slide">
+                <div class="content">
+                   <h1>Events</h1>
+                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, tempore.</p>
+                </div>
+            </article>
+
+            <article class="slide3 swiper-slide">
+                <div class="content">
+                   <h1>Wine and Dine</h1>
+                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, tempore.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    </section>
+
+
+<!-- -------history section------ -->
+
+    <section class="history_section">
+      <div class="container history">
+        <div class="history_left">
+          <h2>History Of Our Cuisine</h2>
+          <p>Lorem ipsum dolor sit.</p>
+          <hr>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum accusantium vitae quibusdam nemo, dolore facilis!</p>
+        </div>
+        <div class="history_right">
+          <img src="./images/history 1.jpg" alt="">
+          <img src="./images/history 2.jpg" alt="">
+          <img src="./images/history 3.jpg" alt="">
+          <img src="./images/history 4.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="chef_section">
+      <div class="container chef">
+        <div class="chef_left">
+          <img src="./images/chef2.jpg" alt="">
+        </div>
+
+        <div class="chef_right">
+          <h2>Experienced Chefs</h2>
+          <p>Lorem ipsum dolor sit.</p>
+          <hr>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum accusantium vitae quibusdam nemo, dolore facilis!</p>
+        </div>
+        
+      </div>
+    </section>
+    <!-- --------------Javascript---------------  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+
+</body>
+</html>
+

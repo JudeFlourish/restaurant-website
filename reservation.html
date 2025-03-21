@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+ <div class="container reservation">
+    <div class="reservation_left">
+        <img src="./images/history 4.jpg" alt="">
+    </div>
+    <div class="reservation_right">
+        <h1>BOOK RESERVATION</h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="e885ef41-415d-4c36-9be5-29135e650d61">
+            <input type="text" name="name" placeholder="Full Name" class="contact-input" required>
+            <input type="email" name="email" placeholder="Email" class="contact-input" required>
+            <input type="text" name="number" placeholder="Phone Number" class="contact-input" required>
+            <input type="date" name="date" class="contact-input" required>
+            <div class="party">
+                <label for="">Number of Party</label>
+                <select name=""  id="numofparty" required>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                </select>
+             </div><br>
+
+             <button type="submit">Book</button>
+        </form>
+    </div>
+ </div>
+</body>
+</html>
