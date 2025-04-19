@@ -19,22 +19,22 @@ body{
     background-image: url(./images/restaurant\ backgroud.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
     background-position: center;
 }
 
 .container{
-    width: 76%;
+    width: 80%;
     margin: 0 auto;
 }
 /* ------------------------------nav----------------------------------- */
 .nav_container{
-    margin-top: 1rem;
+    margin-top: 0.9rem;
     color: var(--text-color);
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
 }
 
 
@@ -45,7 +45,7 @@ body{
 }
 
 .logo_img img{
-    width: 4rem;
+    width: 3rem;
     height: auto;
     border-radius: 50%;
 }
@@ -71,19 +71,21 @@ nav button{
     display: none;
 }
 
+
 /* change navbar style on scroll using javascript */
-.window-scroll{
+/* .window-scroll{
     background-color: #4F7C82;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  }
+  } */
 /* ------------------------------end of nav----------------------------------- */
 
 
 
 .home_page{
-    margin-top: 6rem;
+    margin-top: 5rem;
     align-items: center;
-    padding-right: 30rem
+    padding-right: 30rem;
+    height: 75vh;
 }
 
 .home_page h1{

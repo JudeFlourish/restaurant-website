@@ -1,13 +1,9 @@
-.container{
-    width: 76%;
-    margin: 0 auto;
-}
-
 section{
     display: grid;
     grid-template-columns: 1fr ;
     color: white;
-    top: 1rem;
+    top: 0.5rem;
+    height: 80vh;
 }
 
 
@@ -70,11 +66,13 @@ hr{
     display: grid;
     grid-template-columns: 40% 60%;
     padding: 2rem 0;
+    width: 100%;
+    gap: 2rem;
 }
 
 .history_right{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     right: 0;
 }
@@ -89,7 +87,7 @@ hr{
 .history_right img{
     object-fit: cover;
     height: 15rem;
-    width: 18rem;
+    width: 100%;
     display: inline-block;
     border-radius: 1rem;
 }
@@ -116,68 +114,92 @@ hr{
     display: grid;
     grid-template-columns: 60% 40%;
     padding: 2rem 0;
-}
-
-.chef_left{
-    display: grid;
-    grid-template-columns: 1fr;
-    right: 0;
+    gap: 2rem;
 }
 
 .chef_left img{
     object-fit: cover;
     height: 30rem;
-    width: 35rem;
+    width: 100%;
     display: inline-block;
     border-radius: 0.5rem;
+    left: 0;
 }
 
 .chef_right{
     color: black;
     align-content: center;
-    padding-left: 3rem;
 }
 
 @media screen and (max-width: 1024px) {
-    .chef_left img{
+    .container{
+        width: 90%;
+    }
+
+    /* HISTORY SECTION */
+    .history_right img{
         object-fit: cover;
-        height: 25rem;
-        width: 27rem;
-        display: inline-block;
-        border-radius: 0.5rem;
+        height: 12rem;
+        width: 100%;
+    }
+
+    /* CHEF SECTION */
+    .chef_left img{
+        height: 21rem;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
+    section{
+        height: 60vh;
+    }
+
+    .content h1{
+        font-size: 2rem;
+    }
+
+    .content p{
+        font-size: 0.9rem;
+        margin-right: 4rem;
+    }
+
+    .slide1{
+        padding: 12rem 4rem;
+    }
+
+    .slide2{
+        padding: 12rem 4rem;
+    }
+
+    .slide3{
+        padding: 12rem 4rem;
+    }
+
+    /* HISTORY SECTION */
     .history{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2rem;
     }
 
+    .history_right{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        right: 0;
+    }
+
+    .history_right img{
+        height: 10rem;
+    }
+
+    /* CHEF SECTION */
     .chef{
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .history_right{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        right: 0;
-    }
-
-    .history_right img{
-        object-fit: cover;
-        height: 10rem;
-        width: 13rem;
-        display: inline-block;
-        border-radius: 1rem;
-    }
     .chef_right{
         padding-left: 0;
-    }
-    
+    }  
 }
 
