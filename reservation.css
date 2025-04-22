@@ -23,14 +23,14 @@ body{
 
 /* reservation */
 .reservation{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin-top: 6rem;
+    overflow: hidden;
 }
 
-.reservation_left{
-    width: 30rem;
-    height: 30.57rem;
+.reservation_left img{
+    height: 100%;
 }
 
 .reservation_right h1{
@@ -40,7 +40,7 @@ body{
 .reservation_right{
     align-content: center;
     background-color: wheat;
-    padding: 4rem;
+    padding: 1.8rem;
     line-height: 3rem;
 }
 
@@ -81,24 +81,25 @@ form{
 }
 
 @media screen and (max-width: 1024px) {
-    .container{
-        width: 95%;
-        margin: 0 auto;
-    }
-
     .reservation{
         margin-top: 6rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 70%;
     }
+
+    .reservation_left{
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
-    .container{
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .reservation{
+   .reservation{
         margin-top: 6rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
     }
 
     .reservation_left{
