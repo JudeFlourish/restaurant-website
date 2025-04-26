@@ -28,7 +28,7 @@ body{
 }
 /* ------------------------------nav----------------------------------- */
 .nav_container{
-    margin-top: 0.9rem;
+    margin-top: 1rem;
     color: var(--text-color);
     height: 100%;
     display: flex;
